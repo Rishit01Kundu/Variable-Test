@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sample Variable test</title>
+</head>
+<body>
+      <h1>Sample Variable Test</h1>
+      <button onclick="change()">Click to test variables</button>  
+      <h3>The below text shows the variable storing</h3>    
+      <h1 id="variable-text">Rishit</h1>
+
+
+      <script>
+            var name = "Rishit";                                              
+            document.querySelector("#variable-text").innerHTML = name;
+
+            function change() {
+                  name =  "Pranit";
+                  document.querySelector("#variable-text").innerHTML = name;
+            }
+      </script>
+</body>
+</html>
